@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASCENT Protocol</title>
+<meta name="description" content="The multi-chain wealth engine — real utility, real ownership, real generational impact. Built on Solana, Ethereum and Robinhood Chain.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236C5CFF'/%3E%3Cstop offset='1' stop-color='%2300E0FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 8 L56 52 L8 52 Z' fill='none' stroke='url(%23g)' stroke-width='9' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Satoshi via Fontshare (per brand guide); Manrope as metric-compatible fallback -->
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="glow glow-a" aria-hidden="true"></div>
+<div class="glow glow-b" aria-hidden="true"></div>
+
+<!-- ================================ nav ================================ -->
+<header class="nav">
+  <a class="brand" href="#" data-nav="home">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#6C5CFF"/><stop offset="1" stop-color="#00E0FF"/>
+        </linearGradient>
+      </defs>
+      <path d="M32 8 L56 52 L8 52 Z" fill="none" stroke="url(#lg)" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M30 40 l2.4 5 5 2.4 -5 2.4 -2.4 5 -2.4 -5 -5 -2.4 5 -2.4 z" fill="#fff"/>
+    </svg>
+    <span class="brand-name">ASCENT<small>PROTOCOL</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Site">
+    <a href="#" data-nav="home" class="is-active">Home</a>
+    <a href="#" data-nav="ecosystem">Ecosystem</a>
+    <a href="#" data-nav="token">Token</a>
+    <a href="https://github.com/offlineapp-tech/auditttt" target="_blank" rel="noopener">Docs</a>
+    <a href="#" data-nav="community">Community</a>
+  </nav>
+  <button class="btn btn-grad" data-nav="app">Launch App</button>
+</header>
+
+<main id="viewRoot">
+
+<!-- ================================ HOME =============================== -->
+<section class="view is-active" id="view-home">
+
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="chip">From a dream to a <b>legacy</b>.</span>
+      <h1>The Multi-Chain<br><span class="grad-text">Wealth Engine</span></h1>
+      <p class="lead">ASCENT Protocol is building the infrastructure for real ownership,
+      real utility, and real impact — where users, builders and communities grow wealth together.</p>
+      <div class="hero-cta">
+        <button class="btn btn-grad btn-lg" data-nav="ecosystem">Explore Ecosystem</button>
+        <a class="btn btn-line btn-lg" href="https://github.com/offlineapp-tech/auditttt" target="_blank" rel="noopener">Docs</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="ring ring-1"></div><div class="ring ring-2"></div>
+      <svg class="hero-mark" viewBox="0 0 64 64">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#8B7BFF"/><stop offset=".55" stop-color="#6C5CFF"/><stop offset="1" stop-color="#00E0FF"/>
+          </linearGradient>
+        </defs>
+        <path d="M32 7 L57 53 L7 53 Z" fill="none" stroke="url(#hg)" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M29.5 39 l2.8 5.8 5.8 2.8 -5.8 2.8 -2.8 5.8 -2.8 -5.8 -5.8 -2.8 5.8 -2.8 z" fill="#fff"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><b>3</b><span>Chains</span></div>
+    <div class="stat"><b>5+</b><span>Products</span></div>
+    <div class="stat"><b>1M+</b><span>Community <em>(target)</em></span></div>
+    <div class="stat"><b>100%</b><span>Community Owned</span></div>
+  </div>
+
+  <div class="wide-card">
+    <div class="wide-copy">
+      <h2>Built for the Future.<br>Designed for <span class="grad-text">Everyone</span>.</h2>
+      <p>Seamless experiences. Powerful tools. Limitless opportunities across Solana,
+      Ethereum, and beyond.</p>
+      <button class="btn btn-grad" data-nav="community">Join Community</button>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="phone-notch"></div>
+      <span class="phone-label">Portfolio</span>
+      <span class="phone-value">$24,305.00</span>
+      <canvas id="phoneChart" width="440" height="180"></canvas>
+      <div class="phone-dock"><span>Launch</span><span>Swap</span><span>Stake</span><span>Vote</span></div>
+    </div>
+  </div>
+
+  <div class="feature-band">
+    <h3 class="band-title">What we build</h3>
+    <div class="feature-grid">
+      <article class="feature"><span class="f-ico">🚀</span><h4>Launchpad</h4><p>Fair, transparent token launches with built-in vesting and community allocation.</p></article>
+      <article class="feature"><span class="f-ico">👛</span><h4>Wallet</h4><p>One balance across every chain — send, receive and track without switching networks.</p></article>
+      <article class="feature"><span class="f-ico">⇄</span><h4>Swap &amp; Bridge</h4><p>Best-route swaps and native bridging between Solana, Ethereum and Robinhood Chain.</p></article>
+      <article class="feature"><span class="f-ico">◈</span><h4>Staking</h4><p>Stake $ASCENT for real yield and fee sharing — rewards funded by protocol revenue.</p></article>
+      <article class="feature"><span class="f-ico">📊</span><h4>Analytics</h4><p>A live dashboard over your positions, yields and governance power.</p></article>
+      <article class="feature"><span class="f-ico">🛠</span><h4>SDK for Builders</h4><p>Open SDKs and incentives so anyone can build on the ASCENT rails.</p></article>
+    </div>
+  </div>
+
+  <div class="why-band">
+    <h3 class="band-title">Why ASCENT?</h3>
+    <ul class="checklist">
+      <li>Real utility. Real revenue.</li>
+      <li>Multi-chain from day one.</li>
+      <li>Built for mass adoption.</li>
+      <li>Strong tokenomics. Community owned.</li>
+      <li>Secure smart contracts <em>(audit before mainnet)</em></li>
+      <li>Cross-chain interoperability</li>
+    </ul>
+  </div>
+
+  <div class="roadmap-band">
+    <h3 class="band-title">Phase 1 roadmap</h3>
+    <ol class="roadmap">
+      <li><b>Smart Contracts</b><span>core protocol on testnets</span></li>
+      <li><b>Launchpad MVP</b><span>first fair-launch flow</span></li>
+      <li><b>Wallet MVP</b><span>multi-chain balances</span></li>
+      <li><b>Token Launch</b><span>$ASCENT genesis</span></li>
+      <li><b>Bridge MVP</b><span>Solana ⇄ Ethereum</span></li>
+      <li><b>Staking MVP</b><span>revenue-backed rewards</span></li>
+      <li><b>Governance MVP</b><span>on-chain voting</span></li>
+      <li><b>Analytics Dashboard</b><span>full portfolio view</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================= ECOSYSTEM ============================= -->
+<section class="view" id="view-ecosystem">
+  <header class="page-head">
+    <h1>One protocol. <span class="grad-text">Three powerhouses.</span> Infinite opportunities.</h1>
+    <p>The ASCENT flywheel: every part feeds the others — and everything reports to the community.</p>
+  </header>
+  <div class="eco-grid">
+    <article class="eco-card"><h4>Users &amp; Community</h4><p>Earn. Participate. Own. Fees flow back to the people who use and govern the protocol.</p></article>
+    <article class="eco-card"><h4>Products</h4><p>Launchpad · Wallet · Swap &amp; Bridge · Staking · Analytics — one account, five engines.</p></article>
+    <article class="eco-card"><h4>Treasury</h4><p>Sustainable growth through real yield and strategic allocations. Fully on-chain, fully visible.</p></article>
+    <article class="eco-card"><h4>Builders</h4><p>Open SDKs and incentives to build the future on ASCENT rails.</p></article>
+    <article class="eco-card"><h4>Governance</h4><p>Community-driven decisions. Transparent and on-chain, from parameters to treasury spend.</p></article>
+    <article class="eco-card eco-chains">
+      <h4>Multi-chain infrastructure</h4>
+      <div class="chain-row">
+        <span class="chain-pill chain-sol">Solana</span>
+        <span class="chain-pill chain-eth">Ethereum</span>
+        <span class="chain-pill chain-rh">Robinhood <em>future integration</em></span>
+      </div>
+    </article>
+  </div>
+  <div class="arch">
+    <h3 class="band-title">Architecture</h3>
+    <div class="arch-flow">
+      <div class="arch-box">Solana</div><div class="arch-box">Ethereum</div><div class="arch-box">Robinhood Chain</div>
+      <div class="arch-join">Cross-Chain Layer <span>bridge + messaging</span></div>
+      <div class="arch-join arch-app">Application Layer <span>products &amp; dApps</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== TOKEN =============================== -->
+<section class="view" id="view-token">
+  <header class="page-head">
+    <h1><span class="grad-text">$ASCENT</span></h1>
+    <p>Utility, governance and rewards — one token across the whole ecosystem.</p>
+  </header>
+  <div class="token-grid">
+    <div class="panel">
+      <dl class="kv">
+        <div><dt>Ticker</dt><dd>$ASCENT</dd></div>
+        <div><dt>Total supply</dt><dd>1,000,000,000 — fixed, no inflation</dd></div>
+        <div><dt>Primary use</dt><dd>Utility · Governance · Rewards</dd></div>
+        <div><dt>Launch</dt><dd>TBA — announced in the community first</dd></div>
+        <div><dt>Rewards source</dt><dd>Protocol revenue only — never emissions for their own sake</dd></div>
+      </dl>
+    </div>
+    <div class="panel">
+      <h3 class="panel-title">What it does</h3>
+      <ul class="checklist">
+        <li>Fee discounts across every ASCENT product</li>
+        <li>Stake for a share of real protocol revenue</li>
+        <li>Vote on treasury, listings and parameters</li>
+        <li>Launchpad allocation priority</li>
+      </ul>
+      <p class="fine">Nothing on this page is financial advice. Token details are final only when published on-chain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= COMMUNITY ============================= -->
+<section class="view" id="view-community">
+  <header class="page-head">
+    <h1>Ascent today. <span class="grad-text">Legacy tomorrow.</span></h1>
+    <p>The protocol is 100% community owned. Channels open at launch — links land here first.</p>
+  </header>
+  <div class="community-row">
+    <a class="panel com-card" href="https://github.com/offlineapp-tech/auditttt" target="_blank" rel="noopener"><h4>GitHub</h4><p>The code, in the open.</p></a>
+    <div class="panel com-card is-soon"><h4>X / Twitter</h4><p>Coming at launch.</p></div>
+    <div class="panel com-card is-soon"><h4>Discord</h4><p>Coming at launch.</p></div>
+    <div class="panel com-card is-soon"><h4>Telegram</h4><p>Coming at launch.</p></div>
+  </div>
+</section>
+
+<!-- ================================ APP ================================ -->
+<section class="view" id="view-app">
+  <div class="demo-note" id="demoNote"><b>Preview build.</b> Contracts aren’t live yet — figures are simulated and transactions unlock at deployment.</div>
+  <div class="app-shell">
+    <aside class="side">
+      <button class="side-link is-active" data-app="dash">Dashboard</button>
+      <button class="side-link" data-app="launchpad">Launchpad</button>
+      <button class="side-link" data-app="swap">Swap &amp; Bridge</button>
+      <button class="side-link" data-app="stake">Staking</button>
+      <button class="side-link" data-app="gov">Governance</button>
+      <div class="side-foot">
+        <button class="btn btn-line btn-block" id="connectBtn">Connect wallet</button>
+        <span class="net-tag" id="netTag">Robinhood Testnet · 46630</span>
+      </div>
+    </aside>
+
+    <div class="app-main">
+
+      <div class="app-pane is-active" id="app-dash">
+        <h2 class="pane-title">Dashboard</h2>
+        <div class="tile-row">
+          <div class="tile"><span>Portfolio</span><b id="dashPortfolio">$24,305.00</b></div>
+          <div class="tile"><span>Staked $ASCENT</span><b id="dashStaked">12,400</b></div>
+          <div class="tile"><span>Claimable rewards</span><b id="dashRewards">$86.12</b></div>
+          <div class="tile"><span>Voting power</span><b id="dashVotes">12,400 ve</b></div>
+        </div>
+        <div class="panel"><canvas id="dashChart" width="960" height="220" role="img" aria-label="Portfolio value over time"></canvas></div>
+      </div>
+
+      <div class="app-pane" id="app-launchpad">
+        <h2 class="pane-title">Launchpad</h2>
+        <div class="lp-grid" id="lpGrid"><!-- js --></div>
+      </div>
+
+      <div class="app-pane" id="app-swap">
+        <h2 class="pane-title">Swap &amp; Bridge</h2>
+        <form class="panel swap-panel" id="swapForm">
+          <label class="field"><span>From</span>
+            <div class="swap-line"><input type="text" inputmode="decimal" id="swapIn" placeholder="0.0"><select id="swapInTok"><option>ETH</option><option>USDG</option><option>ASCENT</option></select></div>
+            <select id="swapInChain" class="chain-sel"><option>Ethereum</option><option>Robinhood Chain</option><option>Solana</option></select></label>
+          <button type="button" class="swap-flip" id="swapFlip" aria-label="Flip direction">↓↑</button>
+          <label class="field"><span>To</span>
+            <div class="swap-line"><input type="text" id="swapOut" placeholder="0.0" readonly><select id="swapOutTok"><option>USDG</option><option>ETH</option><option>ASCENT</option></select></div>
+            <select id="swapOutChain" class="chain-sel"><option>Robinhood Chain</option><option>Ethereum</option><option>Solana</option></select></label>
+          <div class="quote-line"><span>Route</span><b id="swapRoute">best of 3 venues</b></div>
+          <button class="btn btn-grad btn-block" type="submit">Swap</button>
+        </form>
+      </div>
+
+      <div class="app-pane" id="app-stake">
+        <h2 class="pane-title">Staking</h2>
+        <div class="stake-cols">
+          <div class="panel">
+            <dl class="kv">
+              <div><dt>Reward source</dt><dd>Protocol fee revenue</dd></div>
+              <div><dt>Current rate</dt><dd id="stakeApr">— until launch</dd></div>
+              <div><dt>Unstake notice</dt><dd>7 days</dd></div>
+              <div><dt>Total staked</dt><dd id="stakeTotal">—</dd></div>
+            </dl>
+          </div>
+          <form class="panel" id="stakeForm">
+            <label class="field"><span>Amount <em>$ASCENT</em></span>
+              <input type="text" inputmode="decimal" id="stakeAmount" placeholder="10,000"></label>
+            <div class="quote-line"><span>You receive</span><b>veASCENT 1:1 + fee share</b></div>
+            <button class="btn btn-grad btn-block" type="submit">Stake</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="app-pane" id="app-gov">
+        <h2 class="pane-title">Governance</h2>
+        <div id="govList"><!-- js --></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div>
+    <span class="brand-name">ASCENT<small>PROTOCOL</small></span>
+    <p class="fine">Built by vision. Backed by purpose. Driven by impact.<br>
+    Preview software — unaudited, not financial advice.</p>
+  </div>
+  <nav class="foot-links">
+    <a href="#" data-nav="token">Token</a>
+    <a href="#" data-nav="ecosystem">Ecosystem</a>
+    <a href="https://github.com/offlineapp-tech/auditttt" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/ethers.umd.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
